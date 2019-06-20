@@ -1,11 +1,42 @@
 <!--Rental Cars Where are you going? test-->
 
+<!--Attempted to use placeType colour configurations for common set of results-->
+
 <div id="mainContainer">
   <div id="searchContainer">
     <h2>Where are you going?</h2>
     <div id="search">
       <label>Pick-up Location</label>
-      <input placeholder="city, airport, station, region, district...">
+      <input (input)="searchEvent=$event.target.value" on-keyup="onKeyup()"
+        placeholder="city, airport, station, region, district...">
+    </div>
+    <div *ngFor="let dat of locationData; let i = index">
+      <div class="resultRowContainer">
+        <div *ngIf="dat.placeType=='A'" class="locType aCol">
+          Airport
+        </div>
+        <div *ngIf="dat.placeType=='C'" class="locType cCol">
+          City
+        </div>
+        <div *ngIf="dat.placeType=='S' || dat.placeType=='T'" class="locType sCol">
+          Station
+        </div>
+        <div *ngIf="dat.placeType=='D' || dat.placeType=='P'" class="locType dCol">
+          District
+        </div>
+        <div *ngIf="dat.placeType=='I'" class="locType rCol">
+          Region
+        </div>
+        <div class="locName" [ngStyle]="{'margin-left':dat.name === 'No results found' ? '16px' : '0px' }">
+          {{dat.name}}
+        </div>
+        <div *ngIf="dat.city" class="locAddress">
+          {{dat.city}}, {{dat.country}}
+        </div>
+        <div *ngIf="!dat.city" class="locAddress">
+          {{dat.country}}
+        </div>
+      </div>
     </div>
   </div>
 </div>

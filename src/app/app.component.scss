@@ -1,57 +1,109 @@
 html {
-    font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
-    line-height: 1.25;
-    -webkit-font-smoothing: antialiased;
-    color: #444;
-  }
-  
-  #mainContainer {
-    background-color: #f3ce56;
+  font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  color: #444;
+}
+
+#mainContainer {
+  background-color: #f3ce56;
+  font-family: Ubuntu, Open Sans, Segoe UI, Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  width: 512px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1px 24px 24px 24px;
+
+  h2 {
     font-family: Ubuntu, Open Sans, Segoe UI, Tahoma, sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 2rem;
     margin-bottom: 1rem;
-    width: 512px;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 1px 24px 24px 24px;
-  
-    h2{
-      font-family: Ubuntu, Open Sans, Segoe UI, Tahoma, sans-serif;
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 2rem;
-      margin-bottom: 1rem;
-    }
   }
-  
-  #search {
-    direction: ltr;
-    display: flex;
-    flex-flow: row wrap;
-    flex-grow: 1;
-    letter-spacing: -.4px;
-  
-    label {
-      font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
-      font-size: 14px;
-      line-height: 1.25rem;
-      display: block;
-      padding: 0 0 4px;
-      color: #444;
-      font-weight: 400;
-    }
-  
-    input {
-      width: 100%;
-      height: 28px;
-      font-size: 15px;
-      border: 1px solid #b4b4b4;
-      -webkit-appearance: none;
-      border-radius: 4px;
-      min-width: 49px;
-      padding: 8px 16px;
-      font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
-    }
+}
+
+#search {
+  direction: ltr;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  letter-spacing: -.4px;
+
+  label {
+    font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.25rem;
+    display: block;
+    padding: 0 0 4px;
+    color: #444;
+    font-weight: 400;
   }
+
+  input {
+    width: 100%;
+    height: 28px;
+    font-size: 15px;
+    border: 1px solid #b4b4b4;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    min-width: 49px;
+    padding: 8px 16px;
+    font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
+  }
+}
+
+.resultRowContainer {
+  display: flex;
+  background-color: #fff;
+  font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
+  border-top: 1px solid #b4b4b4;
+}
+
+.locType {
+  line-height: 1.25rem;
+  font-size: 14px;
+  min-width: 60px;
+  height: 24px;
+  padding: 1px 4px;
+  color: #fff;
+  text-align: center;
+  background-color: #0f6193;
+  border-radius: 4px;
+  margin: 10px 10px 10px 15px;
+}
+
+.locName {
+  font-size: 14px;
+}
+
+.locAddress {
+  font-weight: 400;
+  font-size: 12px;
+  position: absolute;
+  margin-left: 94px;
+  margin-top: 14px;
+}
+
+.aCol {
+  background-color: rgb(150, 20, 18);
+}
+
+.cCol {
+  background-color: rgb(10, 99, 176);
+}
+
+.sCol {
+  background-color: rgb(91, 91, 91);
+}
+
+.dCol {
+  background-color: rgb(1, 124, 68);
+}
+
+.rCol {
+  background-color: rgb(241, 199, 76);
+}
