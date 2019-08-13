@@ -10,7 +10,8 @@ import {
 })
 
 export class LocationSearchService {
-  url = 'https://cors.io/?https://www.rentalcars.com/FTSAutocomplete.do';
+  // url = 'https://cors.io/?https://www.rentalcars.com/FTSAutocomplete.do';
+  url = 'https://www.rentalcars.com/FTSAutocomplete.do';
 
   constructor(private http: HttpClient) {}
 
